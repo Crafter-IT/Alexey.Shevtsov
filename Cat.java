@@ -19,5 +19,5 @@ public class Cat {
         }
     }
 
-    public void satiety() { System.out.println("РљРѕС‚ "+ name + " РЅР°СЃС‹С‚РёР»СЃСЏ: " +  Kitekat); }
+    public void satiety() { System.out.println("Кот "+ name + " насытился: " +  Kitekat); }
 }
