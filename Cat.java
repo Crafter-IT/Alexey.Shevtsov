@@ -1,23 +1,12 @@
-package ru.geekbrains.java1.lesson7;
+package ru.geekbrains.java1.lesson1;
 
-public class Cat {
+public class Cat extends Animals {
 
-        private String name ;
-        private int appetite ;
-        private boolean Kitekat;
 
-        public Cat ( String name , int appetite ) {
-            this.name = name;
-            this.appetite = appetite;
-        }
+    public Cat (){ super(200, 0, 2); }
 
-    public void eat ( Plate p ) {
-        if ((p.getFood() - appetite) >=0){
-            p.decreaseFood ( appetite );
-            Kitekat = true;
-            appetite = 0;
-        }
+    public Cat(int MAXrun, int MAXswiming, int MAXjump) {
+        super(MAXrun, MAXswiming, MAXjump);
+
     }
-
-    public void satiety() { System.out.println("Кот "+ name + " насытился: " +  Kitekat); }
 }
